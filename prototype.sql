@@ -24,6 +24,14 @@ content text not null,
 datep date,
 id_user INT,
 id_article INT,
+id_category INT,
 foreign key (id_user) references user(id),
-foreign key (id_article) references article(id)
+foreign key (id_article) references article(id),
+foreign key (id_category) references category(id)
+
+);
+
+create table category (
+id int auto_increment primary key,
+tittle varchar(100) not null
 );
