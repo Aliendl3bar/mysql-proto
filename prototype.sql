@@ -34,3 +34,8 @@ foreign key (id_user) references user(id),
 foreign key (id_article) references article(id)
 );
 
+create index namex on user (name);
+create index tittlex on article (tittle);
+
+
+
